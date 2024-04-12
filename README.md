@@ -1,28 +1,30 @@
 # Hibernate Person Management Application 
-This is a simple Java
-application that manages person records using Hibernate as the ORM
-(Object-Relational Mapping) framework.
+
+This is a simple Java Console application that manages person records using Hibernate as the ORM (Object-Relational Mapping) framework.
 
 ## Features 
-Sign up: Users can create new person records by providing their details such as name, email, phone, address, and password.
-Login: Users can log in using their email and password.
--- Find person by:
-ID
-Phone number
-Name
--- Delete person by:
-ID
-Phone number
-Email
--- Find all persons: Retrieve a list of all person records.
--- Update person details:
-Name
-Email
-Phone
-Password
-Address
 
-## Console output
+- **Sign up:** Users can create new person records by providing their details such as name, email, phone, address, and password.
+- **Login:** Users can log in using their email and password.
+- **Find person by:**
+  - ID
+  - Phone number
+  - Name
+- **Delete person by:**
+  - ID
+  - Phone number
+  - Email
+- **Find all persons:** Retrieve a list of all person records.
+- **Update person details:**
+  - Name
+  - Email
+  - Phone
+  - Password
+  - Address
+
+## Console Output
+
+```console
 press 
 1.SignUp 
 2.login
@@ -123,4 +125,3 @@ press
 0.Exit
 0
 Exiting...
-
