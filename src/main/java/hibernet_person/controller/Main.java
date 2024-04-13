@@ -145,8 +145,13 @@ public class Main {
                 System.out.println("Enter new name:");
              String name = scanner.next();
                Person person= dao.updateName(id, name);
+               if(person!=null) {
                System.out.println("Result after Update");
+               
                System.out.println(person);
+               }else {
+            	   System.err.println("invalid id provided");
+               }
                 break;
             case 2:
                 // Update email logic
@@ -155,8 +160,11 @@ public class Main {
                  System.out.println("Enter new email:");
                  String email = scanner.next();
                Person person2=  dao.updateEmail(id,email);
+               if(person2!=null) {
                System.out.println("Result after Update");
                System.out.println(person2);
+               }
+               else System.err.println("invalid id provided");
                 break;
             case 3:
                 // Update phone logic
@@ -165,8 +173,11 @@ public class Main {
                  System.out.println("Enter new Phone:");
                  Long phone = scanner.nextLong();
                 Person person3= dao.updatePhone(id, phone);
+                if(person3!=null) {
                 System.out.println("Result after Update");
                 System.out.println(person3);
+                }
+                else System.err.println("invalid id provided");
                 break;
             case 4:
                 // Update password logic
@@ -175,8 +186,10 @@ public class Main {
                  System.out.println("Enter new Password:");
                  String password = scanner.next();
                 Person person4= dao.updatePassword(id, password);
+                if(person4!=null) {
                 System.out.println("Result after Update");
-                System.out.println(person4);
+                System.out.println(person4);}
+                else System.err.println("invalid id provided");
                 break;
             case 5:
                 // Update address logic
@@ -184,9 +197,12 @@ public class Main {
                  id = scanner.nextInt();
                  System.out.println("Enter new Address:");
                  String address = scanner.next();
+                 
                Person person5=  dao.updateAddress(id,address);
+               if(person5!=null) {
                System.out.println("Result after Update");
-               System.out.println(person5);
+               System.out.println(person5);}
+               else System.err.println("invalid id provided");
                 break;
             case 0:
                 return;
